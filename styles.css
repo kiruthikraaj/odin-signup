@@ -1,0 +1,191 @@
+/* Font-face declaration for custom font */
+@font-face {
+  font-family: norse-bold;
+  src: url(/fonts/norse-bold-webfont.woff2);
+}
+
+/* Root variables for theme colors */
+:root {
+  --white: hsl(210, 20%, 98%);
+  --secondary-background-color: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 12%);
+  --accent-color: hsl(92, 20%, 35%);
+  --accent-color-hover: hsl(92, 14%, 46%);
+  --error-color: hsl(0, 54%, 49%);
+  --focus-color: hsl(224, 71%, 55%);
+  --border-color: hsl(228, 12%, 92%);
+}
+
+/* Base font size for responsive scaling */
+html {
+  font-size: 62.5%; /* 1rem = 10px for easier rem calculations */
+}
+
+/* Reset common margin, padding, and box-sizing */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Main body styling */
+body {
+  height: 100vh;
+  display: flex;
+  background-color: var(--white);
+  color: var(--black);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Header styling */
+header {
+  width: 45%;
+  background-image: url(images/halie-west-25xggax4bSA-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Title styling with custom font */
+#title {
+  background-color: hsla(0, 0%, 0%, 0.5); /* Semi-transparent black overlay */
+  margin-top: 35%;
+  font-family: norse-bold;
+  font-size: 5.3rem;
+  padding: 1.5rem;
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Title image styling */
+#title img {
+  width: 11rem;
+}
+
+/* Credit section styling */
+#credit {
+  font-size: 1.5rem;
+  padding: 1rem;
+  color: var(--white);
+  text-align: center;
+}
+
+/* Ensure links in credit section match white text */
+#credit a {
+  color: var(--white);
+}
+
+/* Main content styling */
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Intro section styling */
+main #intro {
+  padding: 2rem 5rem;
+  font-size: 1.2rem;
+}
+
+/* Intro header margin for spacing */
+main #intro h1 {
+  margin-bottom: 2rem;
+}
+
+/* Main form container styling */
+#main-form {
+  background-color: var(--secondary-background-color);
+  padding: 2.5rem 5rem;
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.26);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Main form heading styling */
+#main-form h1 {
+  font-size: 2rem;
+  width: 100%;
+}
+
+/* Form column layout for labels and inputs */
+.col {
+  margin-right: 5rem;
+}
+
+/* Form button styling */
+form button {
+  border: none;
+  border-radius: 8px;
+  background-color: var(--accent-color);
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  padding: 1.2rem 4.4rem;
+  margin: 3rem 5rem;
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.26);
+}
+
+/* Button hover effect */
+form button:hover {
+  background-color: var(--accent-color-hover);
+}
+
+/* Form label styling for accessibility */
+form label {
+  margin: 2rem 0 0.2rem 0;
+  font-size: 1.1rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  display: block;
+}
+
+/* Input field styling */
+form input {
+  width: 25rem;
+  padding: 0.8rem;
+  border-radius: 5px;
+  border: 1px solid var(--border-color);
+}
+
+/* Invalid input styling for form validation */
+form input:invalid {
+  outline: none;
+  border-color: var(--error-color);
+}
+
+/* Focus effect on input fields */
+form input:focus {
+  outline: none;
+  border-color: var(--focus-color);
+  box-shadow: 3px 3px 1px 0px rgba(0, 0, 0, 0.08);
+}
+
+/* Fieldset for logical grouping of form elements */
+fieldset {
+  margin: 0 4px;
+  padding: 0 24px 12px 24px;
+}
+
+/* Paragraph styling inside the main section */
+main p {
+  margin-left: 5rem;
+  font-size: 1.5rem;
+}
+
+/* Links styling within the main content */
+main a {
+  text-decoration: none;
+  color: var(--accent-color);
+  font-weight: bold;
+}
+
+/* Hover effect for links */
+main a:hover {
+  color: var(--accent-color-hover);
+}

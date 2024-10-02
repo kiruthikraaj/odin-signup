@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign-up Form - The Odin Project</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <div id="title">
+        <img src="images/odin-lined.png" alt="Odin Logo" />
+        <h1>Odin</h1>
+      </div>
+      <div id="credit">
+        <p>
+          Photo by
+          <a
+            href="https://unsplash.com/fr/@haliewestphoto"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Halie West</a
+          >
+          on
+          <a
+            href="https://unsplash.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Unsplash</a
+          >
+        </p>
+      </div>
+    </header>
+
+    <main>
+      <section id="intro">
+        <h1>This is not a real online service!</h1>
+        <p>
+          You know you need something like this in your life to help you realize
+          your deepest dreams. Sign up <em>now</em> to get started.
+        </p>
+        <p>You <em>know</em> you want to.</p>
+      </section>
+
+      <form action="https://httpbin.org/post" method="post" novalidate>
+        <fieldset>
+          <legend><h1>Let's do this!</h1></legend>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="first_name">First Name</label>
+              <input
+                type="text"
+                id="first_name"
+                name="first_name"
+                placeholder="Thor"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="last_name">Last Name</label>
+              <input
+                type="text"
+                id="last_name"
+                name="last_name"
+                placeholder="Odinson"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="example@domain.com"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="tel">Phone Number</label>
+              <input
+                type="tel"
+                id="tel"
+                name="tel"
+                placeholder="(123) 456-7890"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Create a password"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="confirm_password">Confirm Password</label>
+              <input
+                type="password"
+                id="confirm_password"
+                name="confirm_password"
+                placeholder="Re-enter your password"
+                required
+              />
+            </div>
+          </div>
+        </fieldset>
+
+        <button type="submit">Create Account</button>
+      </form>
+
+      <p>
+        Already have an account?
+        <a
+          href="https://www.youtube.com/watch?v=V_OVxxIvqVw"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Log in</a
+        >
+      </p>
+    </main>
+  </body>
+</html>
